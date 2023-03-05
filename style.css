@@ -1,0 +1,42 @@
+.logo_img {
+  max-width: 100%;
+}
+
+.hero_image {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 571px) {
+  .hero_image {
+    content: url(./images/hero_desktop.jpg);
+  }
+  .logo_img {
+    max-width: 50%;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+  color: #fff;
+  background-color: hsl(222, 21%, 9%);
+}
+.footer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  text-align: center;
+}
+.footer > div > img {
+  max-width: 30%;
+}
+
+@media (min-width: 571px) {
+  .footer > div > img {
+    max-width: 20%;
+  }
+}
